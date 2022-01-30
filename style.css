@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2fr 17fr;
+    grid-gap: 20px 10px;
+    
+}
+
+.box{
+    background-color: aqua;
+    padding: 20px;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-template-rows: 5fr;
+    background-image: linear-gradient(120deg, red, blue);
+}
+
+.sidebar-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.sidebar-1, .sidebar-2{
+    background-image: conic-gradient(red, yellow, green);
+}
+
+.main{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-image: linear-gradient(180deg, green, blue);
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-image: radial-gradient(circle, red, yellow, green);
+}
